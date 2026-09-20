@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>داشبورد ادمین | نورآسا</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script><script src="../js/tailwind-theme.js"></script>
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="font-vazir bg-cream" data-admin="index.html">
+  <div class="flex min-h-screen">
+    <aside id="admin-side" class="w-64 bg-medical text-white hidden md:block"></aside>
+    <div class="flex-1">
+      <header class="bg-white border-b-2 border-medical px-4 py-3 flex items-center justify-between">
+        <button id="adminMenu" class="md:hidden border rounded-lg px-3 py-2">☰</button>
+        <input class="border rounded-lg px-3 py-2 text-sm w-40 md:w-64" placeholder="جستجو...">
+        <div class="flex items-center gap-3 text-sm"><span>🔔 ۳</span><span class="font-bold">سوپرادمین</span></div>
+      </header>
+      <main class="p-4 md:p-8">
+        <h1 class="text-2xl font-black text-medical mb-4">داشبورد</h1>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+          <article class="card-solid p-4 border-t-4 border-medical"><p class="text-sm">نوبت امروز</p><p class="text-3xl font-black">۴۲</p></article>
+          <article class="card-solid p-4 border-t-4 border-calm"><p class="text-sm">بیماران جدید</p><p class="text-3xl font-black">۱۸</p></article>
+          <article class="card-solid p-4 border-t-4 border-gold"><p class="text-sm">پیام‌ها</p><p class="text-3xl font-black">۹</p></article>
+          <article class="card-solid p-4 border-t-4 border-coral"><p class="text-sm">درآمد نمونه</p><p class="text-2xl font-black">۱۲۸ م</p></article>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-5">
+          <div class="card-solid p-5">
+            <h2 class="font-bold mb-3">نوبت هفتگی</h2>
+            <div class="flex items-end gap-2 h-32">
+              <div class="flex-1 bg-medical h-16 rounded-t"></div>
+              <div class="flex-1 bg-calm h-24 rounded-t"></div>
+              <div class="flex-1 bg-gold h-20 rounded-t"></div>
+              <div class="flex-1 bg-medical h-28 rounded-t"></div>
+              <div class="flex-1 bg-calm h-12 rounded-t"></div>
+            </div>
+          </div>
+          <div class="card-solid p-5 overflow-x-auto">
+            <h2 class="font-bold mb-3">آخرین نوبت‌ها</h2>
+            <table class="admin-table w-full text-sm min-w-[420px]"><thead><tr><th class="p-2">بیمار</th><th>پزشک</th><th>وضعیت</th></tr></thead>
+              <tbody>
+                <tr class="border-b"><td class="p-2">علی محمدی</td><td>رضایی</td><td><span class="status-wait px-2 py-1 rounded-full text-xs">در انتظار</span></td></tr>
+                <tr class="border-b"><td class="p-2">مریم کاظمی</td><td>کریمی</td><td><span class="status-ok px-2 py-1 rounded-full text-xs">تأیید شده</span></td></tr>
+                <tr><td class="p-2">حسین نوری</td><td>نوری</td><td><span class="status-off px-2 py-1 rounded-full text-xs">لغو</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="../js/admin.js"></script>
+</body></html>
