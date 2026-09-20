@@ -1,0 +1,58 @@
+:root {
+  --medical: #0b6e99;
+  --teal: #0f9b8e;
+  --gold: #c9a227;
+  --coral: #e25c4a;
+  --cream: #fbf8f3;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background: var(--cream);
+  color: #1c2b36;
+}
+
+.gold-line {
+  height: 3px;
+  background: linear-gradient(90deg, #c9a227, #0f9b8e, #0b6e99);
+}
+
+.card-solid {
+  background: #fff;
+  border: 1px solid #d9e4ec;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(11, 110, 153, 0.07);
+}
+
+.btn-primary {
+  background: #0b6e99;
+  color: #fff;
+}
+.btn-primary:hover { background: #084e6e; }
+
+.btn-gold {
+  background: #c9a227;
+  color: #1c2b36;
+}
+.btn-gold:hover { background: #b08e1c; }
+
+.btn-coral {
+  background: #e25c4a;
+  color: #fff;
+}
+
+.status-ok { background: #e8f7f1; color: #0b736a; }
+.status-wait { background: #fff6de; color: #8a6d12; }
+.status-off { background: #fdecea; color: #b42318; }
+
+.admin-table thead th {
+  background: #0b6e99;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .admin-table-wrap { overflow-x: auto; }
+  .admin-cards .hide-mobile { display: none; }
+}
