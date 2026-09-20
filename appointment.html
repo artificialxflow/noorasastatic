@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رزرو نوبت | نورآسا</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script><script src="js/tailwind-theme.js"></script>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="font-vazir bg-cream">
+  <div id="site-header"></div>
+  <main class="max-w-xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-black text-medical mb-6">نوبت‌دهی آنلاین</h1>
+    <div class="card-solid p-6">
+      <section data-step="1">
+        <h2 class="font-bold mb-3">۱. انتخاب خدمت</h2>
+        <select class="w-full border rounded-lg px-3 py-2"><option>ویزیت قلب</option><option>چکاپ طلایی</option><option>تصویربرداری</option></select>
+      </section>
+      <section data-step="2" class="hidden">
+        <h2 class="font-bold mb-3">۲. انتخاب پزشک</h2>
+        <select class="w-full border rounded-lg px-3 py-2"><option>دکتر سارا رضایی</option><option>دکتر امیر کریمی</option></select>
+      </section>
+      <section data-step="3" class="hidden">
+        <h2 class="font-bold mb-3">۳. تاریخ</h2>
+        <input type="date" class="w-full border rounded-lg px-3 py-2">
+      </section>
+      <section data-step="4" class="hidden">
+        <h2 class="font-bold mb-3">۴. تأیید</h2>
+        <p class="text-sm">نوبت نمونه: قلب · دکتر رضایی · چهارشنبه ۱۰:۳۰</p>
+        <button id="finishAppt" type="button" class="btn-gold mt-3 rounded-lg px-4 py-2 font-bold">ثبت نوبت</button>
+      </section>
+      <div class="flex justify-between mt-6">
+        <button id="prevStep" type="button" class="border rounded-lg px-4 py-2">قبلی</button>
+        <button id="nextStep" type="button" class="btn-primary rounded-lg px-4 py-2">بعدی</button>
+      </div>
+      <p id="apptSuccess" class="hidden mt-4 text-calm font-bold">نوبت شما ثبت شد ✅</p>
+    </div>
+  </main>
+  <div id="site-footer"></div><script src="js/site.js"></script>
+</body></html>
