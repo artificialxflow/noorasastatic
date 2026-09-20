@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پنل بیمار | نورآسا</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script><script src="js/tailwind-theme.js"></script>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="font-vazir bg-cream">
+  <div id="site-header"></div>
+  <main class="max-w-5xl mx-auto px-4 py-8" data-tabs>
+    <h1 class="text-3xl font-black text-medical mb-4">پنل بیمار — علی محمدی</h1>
+    <div class="flex flex-wrap gap-2 mb-4">
+      <button data-tab="a" class="bg-medical text-white rounded-lg px-3 py-2 text-sm">نوبت‌ها</button>
+      <button data-tab="d" class="border rounded-lg px-3 py-2 text-sm">مدارک</button>
+      <button data-tab="m" class="border rounded-lg px-3 py-2 text-sm">پیام‌ها</button>
+      <button data-tab="p" class="border rounded-lg px-3 py-2 text-sm">فاکتورها</button>
+    </div>
+    <section data-pane="a" class="card-solid p-5">
+      <h2 class="font-bold mb-3">نوبت‌های من</h2>
+      <div class="border rounded-xl p-3 flex justify-between items-center"><span>قلب · چهارشنبه ۱۰:۳۰</span><span class="status-wait text-xs px-2 py-1 rounded-full">در انتظار</span></div>
+    </section>
+    <section data-pane="d" class="card-solid p-5 hidden">
+      <h2 class="font-bold mb-3">آپلود مدارک</h2>
+      <div class="border-2 border-dashed rounded-2xl p-8 text-center">فایل را اینجا رها کنید (ظاهری)</div>
+    </section>
+    <section data-pane="m" class="card-solid p-5 hidden">
+      <h2 class="font-bold mb-3">پیام با پزشک</h2>
+      <p class="text-sm bg-medical-light p-3 rounded-xl">نتیجه اکو آماده است.</p>
+      <input class="w-full border rounded-lg px-3 py-2 mt-3" placeholder="پیام جدید...">
+    </section>
+    <section data-pane="p" class="card-solid p-5 hidden">
+      <h2 class="font-bold mb-3">فاکتور نمونه</h2>
+      <p>مبلغ: ۲٬۴۰۰٬۰۰۰ تومان</p>
+      <button data-modal-open="payOk" class="btn-coral rounded-lg px-4 py-2 mt-3">پرداخت آنلاین</button>
+    </section>
+  </main>
+  <div id="payOk" class="modal hidden fixed inset-0 bg-black/40 grid place-items-center p-4">
+    <div class="card-solid p-6 max-w-sm text-center"><p class="text-2xl">پرداخت موفق ✅</p><button data-modal-close class="mt-4 border rounded-lg px-4 py-2">بستن</button></div>
+  </div>
+  <div id="site-footer"></div><script src="js/site.js"></script>
+</body></html>
